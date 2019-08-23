@@ -1,0 +1,38 @@
+# 打开文件
+vim flilename       打开或新建文件
+vim +n filename     打开文件，光标置于第n行
+vim + filename      open file,光标置于最后一行
+vim +/pattern filename  opne file,光标置于匹配的第一个串处
+vim -r file         打开上次编辑时崩溃的文件
+vim filename filename  打开多个文件，依次编辑
+
+# vim配置
+set nu/number/nonumber    设置行号/取消行号
+set ruler/noruler         设置标尺/取消
+set hlsearch/nohlsearch   搜索高亮/取消
+syntax on                 语法高亮
+
+ignorance                 搜索忽略大小写
+number                    显示当前行号
+
+# 光标移动
+k j l h           上下左右
+nk nj nl nh       上下左右n行
+Space             右移一个字符
+BackSpace         左移
+Enter             下移一行
+
+$                 当前行尾
+n$                移到第n行尾
+nG                移到第n行
+G                 移到最后一行
+gg                移到第一行
+
+%                 找到匹配的括号
+
+w/W               右移一个字至字首
+b/B               左移一个字至字首
+e/E               右移一个字至字尾
+
+(/)               句首/句尾
+{/}               段落首/段落尾
