@@ -1,2 +1,4 @@
 time
 space
+line
+last
