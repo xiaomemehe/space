@@ -1,4 +1,0 @@
-time
-space
-line
-last
