@@ -56,3 +56,19 @@
 1. 遍历字符串S，如果S串和P串匹配第一位，P串指针后移一位
 2. 后移过程中，如果失配了，将j的位置移动到next对应的value处（next数组的用处，如果没有next数组，每次失配需要将j移动到第一位重新开始）
 3. 如果j==length(P) ，匹配成功
+
+* **匹配代码**
+```
+  j = 0
+  for(i=0;i<length(S);i++){
+    //失配处理
+    while(j>0 && S[i] != P[j])
+      j = next[j]
+    //匹配上
+    if (S[i] == P[j]) 
+      j++
+    //成功
+    if (j == length(P))
+      return i-length(P)+1
+  }
+```
