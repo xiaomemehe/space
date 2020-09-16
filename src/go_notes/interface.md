@@ -29,3 +29,6 @@ func main() {
 ```
 
 from <a href="http://www.topgoer.com/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E6%8E%A5%E5%8F%A3.html">link</a>
+
+
+* 如果实现接口的方法的接收器是指针类型，则传参给接口类型时必需是指针，如果不是，则随便传
